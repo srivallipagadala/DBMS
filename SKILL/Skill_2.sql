@@ -1,4 +1,4 @@
-create database if not exists a2520090005
+create database if not exists a2520090040
 
 use a2520090005;
 
