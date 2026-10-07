@@ -1,0 +1,94 @@
+{
+  "report_id": 9,
+  "report_name": "Security report 9/17/2026",
+  "report_type": "Security",
+  "generated_at": "2026-09-17T03:50:50.637Z",
+  "summary": {
+    "traffic": {
+      "records": 16,
+      "packets": "3640",
+      "bytes": "420640"
+    },
+    "intrusions": {
+      "total": 10,
+      "high_risk": "6",
+      "average_confidence": "88.390000"
+    },
+    "alerts": {
+      "total": 10,
+      "active": "6"
+    }
+  },
+  "recent_intrusions": [
+    {
+      "attack_type": "Anomalous Network Activity",
+      "severity": "CRITICAL",
+      "confidence_score": "97.10",
+      "source_ip": "203.0.113.45",
+      "timestamp": "2026-09-02T03:12:00.000Z"
+    },
+    {
+      "attack_type": "Anomalous Network Activity",
+      "severity": "CRITICAL",
+      "confidence_score": "97.10",
+      "source_ip": "203.0.113.45",
+      "timestamp": "2026-09-02T03:12:00.000Z"
+    },
+    {
+      "attack_type": "Unusual Login",
+      "severity": "LOW",
+      "confidence_score": "76.40",
+      "source_ip": "198.51.100.25",
+      "timestamp": "2026-09-02T03:03:00.000Z"
+    },
+    {
+      "attack_type": "Unusual Login",
+      "severity": "LOW",
+      "confidence_score": "76.40",
+      "source_ip": "198.51.100.25",
+      "timestamp": "2026-09-02T03:03:00.000Z"
+    },
+    {
+      "attack_type": "Suspicious Traffic",
+      "severity": "MEDIUM",
+      "confidence_score": "82.75",
+      "source_ip": "192.0.2.31",
+      "timestamp": "2026-09-02T02:57:00.000Z"
+    },
+    {
+      "attack_type": "Suspicious Traffic",
+      "severity": "MEDIUM",
+      "confidence_score": "82.75",
+      "source_ip": "192.0.2.31",
+      "timestamp": "2026-09-02T02:57:00.000Z"
+    },
+    {
+      "attack_type": "Port Scanning",
+      "severity": "HIGH",
+      "confidence_score": "91.20",
+      "source_ip": "203.0.113.21",
+      "timestamp": "2026-09-02T02:48:00.000Z"
+    },
+    {
+      "attack_type": "Port Scanning",
+      "severity": "HIGH",
+      "confidence_score": "91.20",
+      "source_ip": "203.0.113.21",
+      "timestamp": "2026-09-02T02:48:00.000Z"
+    },
+    {
+      "attack_type": "Brute Force",
+      "severity": "HIGH",
+      "confidence_score": "94.50",
+      "source_ip": "198.51.100.10",
+      "timestamp": "2026-09-02T02:42:00.000Z"
+    },
+    {
+      "attack_type": "Brute Force",
+      "severity": "HIGH",
+      "confidence_score": "94.50",
+      "source_ip": "198.51.100.10",
+      "timestamp": "2026-09-02T02:42:00.000Z"
+    }
+  ]
+}

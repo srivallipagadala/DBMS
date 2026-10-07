@@ -1,0 +1,207 @@
+{
+  "report_id": 4,
+  "report_name": "CIC-IDS2017 current data report 2026-10-01T16:20:30.604Z",
+  "report_type": "CIC-IDS2017",
+  "generated_at": "2026-10-01T16:20:33.751Z",
+  "summary": {
+    "traffic": {
+      "_id": null,
+      "records": 305745,
+      "packets": 8656644,
+      "bytes": 8760399503
+    },
+    "intrusions": {
+      "_id": null,
+      "total": 137385,
+      "high_risk": 128263,
+      "average_confidence": 98.10367965935146
+    },
+    "alerts": {
+      "_id": null,
+      "total": 137385,
+      "active": 137384
+    }
+  },
+  "recent_intrusions": [
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 76421,
+      "attack_type": "Web Attack � Brute Force",
+      "confidence_score": 47.66,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T16:19:18.288Z"
+    },
+    {
+      "row_index": 76323,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "Web Attack � XSS",
+      "confidence_score": 34.64,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T16:19:18.287Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 76196,
+      "attack_type": "Web Attack � XSS",
+      "confidence_score": 41.9,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T16:19:18.287Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 76180,
+      "attack_type": "Web Attack � Brute Force",
+      "confidence_score": 38.13,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T16:19:18.286Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 76179,
+      "attack_type": "Web Attack � Brute Force",
+      "confidence_score": 59.32,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T16:19:18.286Z"
+    },
+    {
+      "row_index": 76128,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "DoS Hulk",
+      "confidence_score": 40.12,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T16:19:18.285Z"
+    },
+    {
+      "row_index": 76151,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "Web Attack � Brute Force",
+      "confidence_score": 45.83,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T16:19:18.284Z"
+    },
+    {
+      "row_index": 365,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "Web Attack � Brute Force",
+      "confidence_score": 52.98,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.564Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 490,
+      "attack_type": "DoS Hulk",
+      "confidence_score": 51.81,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.547Z"
+    },
+    {
+      "row_index": 419,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "DoS Hulk",
+      "confidence_score": 51.19,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.546Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 364,
+      "attack_type": "Web Attack � Brute Force",
+      "confidence_score": 53.29,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.545Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 361,
+      "attack_type": "Web Attack � Brute Force",
+      "confidence_score": 42.44,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.544Z"
+    },
+    {
+      "row_index": 348,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "DoS Hulk",
+      "confidence_score": 90.44,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.543Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 329,
+      "attack_type": "DoS Hulk",
+      "confidence_score": 65.48,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.541Z"
+    },
+    {
+      "row_index": 317,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "Web Attack � Brute Force",
+      "confidence_score": 38.04,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.540Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 290,
+      "attack_type": "SSH-Patator",
+      "confidence_score": 48.02,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.539Z"
+    },
+    {
+      "row_index": 234,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "DoS GoldenEye",
+      "confidence_score": 49.57,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.538Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 243,
+      "attack_type": "DoS GoldenEye",
+      "confidence_score": 82.68,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.537Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 133,
+      "attack_type": "DoS GoldenEye",
+      "confidence_score": 52.05,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.535Z"
+    },
+    {
+      "row_index": 1634,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "Bot",
+      "confidence_score": 63.34,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:13:29.916Z"
+    }
+  ]
+}

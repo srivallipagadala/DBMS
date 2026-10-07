@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>AI Security | Access</title>
+        <style>:root{--ink:#17202a;--muted:#687381;--teal:#087f78;--paper:#fff;--wash:#edf4f1}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:linear-gradient(135deg,#173a35,#eaf2ee 72%);color:var(--ink);font:15px/1.5 Georgia,serif}.shell{width:min(920px,92vw);display:grid;grid-template-columns:1fr 1.05fr;background:var(--paper);border-radius:12px;overflow:hidden;box-shadow:0 25px 60px #102c2a35}.intro{padding:54px 46px;background:#173a35;color:#edf8f3}.brand{font-size:22px;margin-bottom:70px}.brand b{color:#8cd5c3}.intro h1{font-size:42px;font-weight:normal;line-height:1.05;margin:0 0 18px}.intro p{color:#bdd4cc;max-width:310px}.signals{margin-top:42px;color:#d4e7e0;display:grid;gap:12px}.form-side{padding:48px}.tabs{display:flex;gap:20px;border-bottom:1px solid #dfe5e8;margin-bottom:25px}.tabs button{background:none;border:0;padding:0 0 11px;color:var(--muted);cursor:pointer}.tabs button.active{color:var(--teal);border-bottom:2px solid var(--teal)}h2{font-weight:normal;font-size:30px;margin:0 0 6px}.sub{color:var(--muted);margin:0 0 24px}.form{display:grid;gap:15px}.form label{display:grid;gap:6px;color:var(--muted)}input{border:1px solid #ccd9d5;padding:12px;border-radius:5px;background:#fbfdfc}input:focus{outline:2px solid #b5e0d2;border-color:var(--teal)}.primary{padding:13px;background:var(--teal);color:#fff;border-radius:5px;font-weight:bold;cursor:pointer}.message{display:none;padding:10px 12px;border-radius:5px;margin-bottom:14px}.message.show{display:block}.error{background:#ffebe7;color:#a33f32}.success{background:#e4f5ed;color:#176e55}.fine{font-size:12px;color:var(--muted);margin-top:26px}@media(max-width:700px){.shell{display:block}.intro{display:none}.form-side{padding:32px 24px}}
+</style>
+</head>
+<body>
+    <main class="shell">
+        <section class="intro">
+            <div class="brand">AI <b>SECURITY</b></div>
+            <h1>See risk before it spreads.</h1>
+            <p>AI-assisted network monitoring, intrusion detection, and response in one focused workspace.</p>
+            <div class="signals">
+                <div>◦ Live traffic intelligence</div>
+                <div>◦ Confidence-scored detections</div>
+                <div>◦ Analyst-ready response tools</div>
+            </div>
+        </section>
+        <section class="form-side">
+            <div class="tabs">
+                <button class="active" data-mode="login">Sign in</button><button data-mode="register">Create account</button>
+            </div>
+            <div id="message" class="message">
+            </div>
+            <form id="login-form" class="form">
+                <h2>Welcome back</h2>
+                <p class="sub">Sign in to open your security workspace.</p>
+                <label>Username<input id="login-username" required autocomplete="username"></label>
+                <label>Password<input id="login-password" type="password" required autocomplete="current-password"></label>
+                <button class="primary" type="submit">Sign in</button>
+            </form>
+            <form id="register-form" class="form" style="display:none">
+                <h2>Join the desk</h2>
+                <p class="sub">Create an analyst account in a few seconds.</p>
+                <label>Username<input id="register-username" required></label>
+                <label>Email<input id="register-email" type="email" required>
+                </label>
+                <label>Password<input id="register-password" type="password" minlength="8" required></label>
+                <button class="primary" type="submit">Create account</button>
+            </form>
+            <p class="fine">Protected access for authorized security analysts.</p>
+        </section>
+    </main>
+    <script>
+    const message=document.getElementById('message');function show(text,type='error'){message.textContent=text;message.className=`message show ${type}`}document.querySelectorAll('[data-mode]').forEach(tab=>tab.addEventListener('click',()=>{const register=tab.dataset.mode==='register';document.querySelectorAll('[data-mode]').forEach(item=>item.classList.toggle('active',item===tab));document.getElementById('login-form').style.display=register?'none':'grid';document.getElementById('register-form').style.display=register?'grid':'none';message.className='message'}));document.getElementById('login-form').addEventListener('submit',async event=>{event.preventDefault();try{const response=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:document.getElementById('login-username').value.trim(),password:document.getElementById('login-password').value})});const data=await response.json();if(!response.ok)throw new Error(data.message||'Unable to sign in.');localStorage.setItem('token',data.token);localStorage.setItem('user',JSON.stringify(data.user));show('Signed in. Opening dashboard...','success');window.location.href='dashboard.html'}catch(error){show(error.message)}});document.getElementById('register-form').addEventListener('submit',async event=>{event.preventDefault();try{const response=await fetch('/api/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:document.getElementById('register-username').value.trim(),email:document.getElementById('register-email').value.trim(),password:document.getElementById('register-password').value})});const data=await response.json();if(!response.ok)throw new Error(data.message||'Unable to create account.');show(data.message,'success');event.target.reset()}catch(error){show(error.message)}});</script></body></html>

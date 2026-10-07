@@ -1,0 +1,207 @@
+{
+  "report_id": 3,
+  "report_name": "CIC-IDS2017 live report 2026-10-01T16:14:21.794Z",
+  "report_type": "CIC-IDS2017",
+  "generated_at": "2026-10-01T16:14:27.329Z",
+  "summary": {
+    "traffic": {
+      "_id": null,
+      "records": 305746,
+      "packets": 8656646,
+      "bytes": 8760399515
+    },
+    "intrusions": {
+      "_id": null,
+      "total": 137378,
+      "high_risk": 128262,
+      "average_confidence": 98.10643938621904
+    },
+    "alerts": {
+      "_id": null,
+      "total": 137378,
+      "active": 137377
+    }
+  },
+  "recent_intrusions": [
+    {
+      "row_index": 365,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "Web Attack � Brute Force",
+      "confidence_score": 52.98,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.564Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 490,
+      "attack_type": "DoS Hulk",
+      "confidence_score": 51.81,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.547Z"
+    },
+    {
+      "row_index": 419,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "DoS Hulk",
+      "confidence_score": 51.19,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.546Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 364,
+      "attack_type": "Web Attack � Brute Force",
+      "confidence_score": 53.29,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.545Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 361,
+      "attack_type": "Web Attack � Brute Force",
+      "confidence_score": 42.44,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.544Z"
+    },
+    {
+      "row_index": 348,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "DoS Hulk",
+      "confidence_score": 90.44,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.543Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 329,
+      "attack_type": "DoS Hulk",
+      "confidence_score": 65.48,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.541Z"
+    },
+    {
+      "row_index": 317,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "Web Attack � Brute Force",
+      "confidence_score": 38.04,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.540Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 290,
+      "attack_type": "SSH-Patator",
+      "confidence_score": 48.02,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.539Z"
+    },
+    {
+      "row_index": 234,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "DoS GoldenEye",
+      "confidence_score": 49.57,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.538Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 243,
+      "attack_type": "DoS GoldenEye",
+      "confidence_score": 82.68,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.537Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 133,
+      "attack_type": "DoS GoldenEye",
+      "confidence_score": 52.05,
+      "severity": "HIGH",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:21:11.535Z"
+    },
+    {
+      "row_index": 1634,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "Bot",
+      "confidence_score": 63.34,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:13:29.916Z"
+    },
+    {
+      "row_index": 1442,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "Bot",
+      "confidence_score": 52.13,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:13:25.231Z"
+    },
+    {
+      "row_index": 1424,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "Bot",
+      "confidence_score": 84.69,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:13:25.231Z"
+    },
+    {
+      "row_index": 1362,
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "attack_type": "Bot",
+      "confidence_score": 83.85,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:13:25.230Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 1358,
+      "attack_type": "Bot",
+      "confidence_score": 60.08,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:13:25.230Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 1310,
+      "attack_type": "Bot",
+      "confidence_score": 65.09,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:13:25.230Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 1355,
+      "attack_type": "Bot",
+      "confidence_score": 63.79,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:13:25.229Z"
+    },
+    {
+      "source_dataset": "CIC-IDS2017 MachineLearningCSV",
+      "row_index": 1228,
+      "attack_type": "Bot",
+      "confidence_score": 48.73,
+      "severity": "MEDIUM",
+      "source_ip": null,
+      "timestamp": "2026-10-01T05:13:25.229Z"
+    }
+  ]
+}
